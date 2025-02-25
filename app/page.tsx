@@ -58,25 +58,23 @@ export default function HomePage() {
                     Eunie Jo
                   </h1>
                   <br />
-                  <span className="block text-xl md:text-3xl font-normal text-muted-foreground mt-4">
+                  <span className="block text-lg md:text-3xl font-normal text-muted-foreground mt-4">
                     Software Engineer
                   </span>
-                  <p className="max-w-[600px] text-gray-500 md:text-xl dark:text-gray-400 mx-auto lg:mx-0">
-                    Experienced Software Engineer with a strong background in backend development, cloud computing, AI/ML,
-                    and real-time data processing. Dedicated to building scalable and efficient software solutions.
-                  </p>
+                  <p className="max-w-[600px] text-gray-500 md:text-lg dark:text-gray-400 mx-auto lg:mx-0">
+                  I’m a software engineer specializing in frontend and backend development for scalable, data-driven applications. With expertise in AI/ML, cloud computing, and real-time dashboards, I build end-to-end solutions. Curious how I can help your project? Check out my project portfolio and online resume.  </p>
                 </div>
                 <div className="flex flex-col gap-2 min-[400px]:flex-row items-center justify-center lg:justify-start">
-                  <Button className="bg-blue-500 hover:bg-blue-600 text-white text-lg py-4 px-6" asChild>
+                  <Button className="bg-blue-500 hover:bg-blue-600 text-white text-md py-4 px-6" asChild>
                     <Link href="#contact">
                       Get in touch
                       <ArrowRight className="ml-2 size-4" />
                     </Link>
                   </Button>
-                  <Button variant="outline" className="border-blue-500/20 hover:border-blue-500/40 text-lg py-4 px-6" asChild>
+                  <Button variant="outline" className="border-blue-500/20 hover:border-blue-500/40 text-md py-4 px-6" asChild>
                     <Link href="#projects">View Projects</Link>
                   </Button>
-                  <Button size="lg" variant="outline" className="border-blue-500/20 hover:border-blue-500/40 text-lg py-4 px-6" asChild>
+                  <Button size="lg" variant="outline" className="border-blue-500/20 hover:border-blue-500/40 text-md py-4 px-6" asChild>
                     <Link href="/resume">View Resume</Link>
                   </Button>
                 </div>
@@ -110,7 +108,7 @@ export default function HomePage() {
             className="text-center space-y-4"
           >
             <h2 className="text-3xl font-bold tracking-tight">What I Do</h2>
-            <p className="md:text-xl text-muted-foreground max-w-[800px] mx-auto">
+            <p className="md:text-lg text-muted-foreground max-w-[800px] mx-auto">
               Experienced Software Engineer with a strong background in backend development, cloud computing, AI/ML,
               and real-time data processing. Dedicated to building scalable and efficient software solutions.
             </p>
@@ -128,7 +126,7 @@ export default function HomePage() {
             className="text-center space-y-4"
           >
             <h2 className="text-3xl font-bold tracking-tight">Featured Projects</h2>
-            <p className="md:text-xl text-muted-foreground max-w-[1000px] mx-auto">
+            <p className="md:text-lg text-muted-foreground max-w-[1000px] mx-auto">
               A selection of my work including AI models, web applications, cloud systems, and data visualization.
             </p>
           </motion.div>
@@ -165,12 +163,13 @@ export default function HomePage() {
             <Card>
               <CardHeader className="text-center">
                 <CardTitle className="text-3xl">Let's Connect</CardTitle>
-                <CardDescription>Feel free to reach out for collaborations or just a friendly hello</CardDescription>
+                <p className="md:text-lg text-muted-foreground max-w-[1000px] mx-auto">
+                Feel free to reach out for collaborations or just a friendly hello</p>
               </CardHeader>
               <CardContent className="max-w-[600px] mx-auto space-y-6">
                 <form className="space-y-4">
                   <div className="space-y-2">
-                    <label htmlFor="name" className="text-lg font-medium">
+                    <label htmlFor="name" className="text-md font-medium">
                       Name
                     </label>
                     <input
@@ -181,7 +180,7 @@ export default function HomePage() {
                     />
                   </div>
                   <div className="space-y-2">
-                    <label htmlFor="email" className="text-lg font-medium">
+                    <label htmlFor="email" className="text-md font-medium">
                       Email
                     </label>
                     <input
@@ -192,7 +191,7 @@ export default function HomePage() {
                     />
                   </div>
                   <div className="space-y-2">
-                    <label htmlFor="message" className="text-lg font-medium">
+                    <label htmlFor="message" className="text-md font-medium">
                       Message
                     </label>
                     <textarea
@@ -202,7 +201,7 @@ export default function HomePage() {
                       className="w-full p-2 border rounded-md bg-background"
                     />
                   </div>
-                  <Button type="submit" className="w-full bg-blue-500 hover:bg-blue-600 text-lg py-4 px-6">
+                  <Button type="submit" className="w-full bg-blue-500 hover:bg-blue-600 text-md py-4 px-6">
                     Send Message
                   </Button>
                 </form>
@@ -212,12 +211,12 @@ export default function HomePage() {
                     <div className="w-full border-t"></div>
                   </div>
                   <div className="relative flex justify-center text-xs uppercase">
-                    <span className="text-lg bg-background px-2 text-muted-foreground">Or reach out via</span>
+                    <span className="text-md bg-background px-2 text-muted-foreground">Or reach out via</span>
                   </div>
                 </div>
 
                 <div className="flex flex-col gap-4 items-center">
-                  <Link href="mailto:iameuniejo@gmail.com" className="text-lg flex items-center gap-2 hover:text-primary">
+                  <Link href="mailto:iameuniejo@gmail.com" className="text-md flex items-center gap-2 hover:text-primary">
                     <Mail className="size-4" />
                     iameuniejo@gmail.com
                   </Link>
@@ -242,10 +241,10 @@ export default function HomePage() {
         <div className="container mx-auto flex flex-col md:flex-row h-14 items-center justify-between">
           <p className="text-sm text-muted-foreground">© {new Date().getFullYear()} Eunie Jo. All rights reserved.</p>
           <div className="flex justify-center gap-4 mt-2 md:mt-0">
-            <Link href="https://github.com/euniejo" className="text-md text-muted-foreground hover:text-foreground">
+            <Link href="https://github.com/euniejo" className="text-sm text-muted-foreground hover:text-foreground">
               GitHub
             </Link>
-            <Link href="https://linkedin.com/in/euniejo" className="text-md text-muted-foreground hover:text-foreground">
+            <Link href="https://linkedin.com/in/euniejo" className="text-sm text-muted-foreground hover:text-foreground">
               LinkedIn
             </Link>
           </div>

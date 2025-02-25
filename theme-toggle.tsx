@@ -12,15 +12,30 @@ interface ThemeToggleProps {
 export function ThemeToggle({ isDarkMode, setIsDarkMode }: ThemeToggleProps) {
 
   useEffect(() => {
-    const theme = localStorage.getItem("theme") || "light"
-    setIsDarkMode(theme === "dark")
-  }, [])
+    const storedTheme = localStorage.getItem("theme");
+    if (storedTheme) {
+      setIsDarkMode(storedTheme === "dark");
+      if (storedTheme === "dark") {
+        document.documentElement.classList.add('dark');
+      } else {
+        document.documentElement.classList.remove('dark');
+      }
+    } else {
+      const prefersDarkScheme = window.matchMedia("(prefers-color-scheme: dark)").matches;
+      setIsDarkMode(prefersDarkScheme);
+      if (prefersDarkScheme) {
+        document.documentElement.classList.add('dark');
+      } else {
+        document.documentElement.classList.remove('dark');
+      }
+    }
+  }, [setIsDarkMode]);
 
   const toggleTheme = () => {
-    const newTheme = !isDarkMode ? "dark" : "light"
-    setIsDarkMode(!isDarkMode)
-    document.documentElement.classList.toggle('dark')
-    localStorage.setItem("theme", newTheme)
+    const newTheme = !isDarkMode ? "dark" : "light";
+    setIsDarkMode(!isDarkMode);
+    document.documentElement.classList.toggle('dark');
+    localStorage.setItem("theme", newTheme);
   }
 
   return (

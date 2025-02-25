@@ -18,28 +18,27 @@ type Project = {
 
 const projects: Project[] = [
   {
-    title: "Task Management App",
-    description: "A mobile-first task management application with real-time updates",
-    tags: ["React Native", "Firebase", "Redux"],
-    github: "https://github.com",
-    demo: "https://example.com",
+    title: "Educational Chatbot Service",
+    description: "A chatbot service leveraging RAG (Retrieval-Augmented Generation) for enhanced knowledge retrieval, with a Python backend and a React frontend.",
+    tags: ["Python", "RAG", "React", "LLM", "AI"],
+    github: "",
+    demo: "https://ai.cvri.ca",
     category: "ai",
   },
   {
-    title: "E-commerce Platform",
-    description: "A full-stack e-commerce platform built with Next.js and Stripe integration",
-    tags: ["Next.js", "TypeScript", "Stripe", "Tailwind CSS"],
-    github: "https://github.com",
-    demo: "https://example.com",
+    title: "Order Management & Invoicing System",
+    description: "A full-stack web application for efficient order management and invoicing, featuring customer data capture and invoice generation.",
+    tags: ["HTML", "CSS", "JavaScript", "Node.js", "Express", "MongoDB", "AWS EC2"],
+    github: "https://github.com/euniej/order-management",
+    demo: "",
     category: "web",
   },
-
   {
-    title: "AI Image Generator",
-    description: "An AI-powered image generation tool using stable diffusion",
-    tags: ["Python", "PyTorch", "FastAPI", "React"],
-    github: "https://github.com",
-    demo: "https://example.com",
+    title: "Clinical Encounter Notes App",
+    description: "A comprehensive application for managing clinical encounter notes with features for creating, editing, and storing patient records in Azure SQL.",
+    tags: ["C#", "WinForms", "Azure SQL", "Regex"],
+    github: "https://github.com/euniej/encounter-note",
+    demo: "",
     category: "other",
   },
 ]

@@ -2,7 +2,7 @@
 
 import { Card, CardContent, CardHeader } from "@/components/ui/card"
 import { motion } from "framer-motion"
-import { Code2, Box, Server, PiIcon as Python, Database, Globe } from "lucide-react"
+import { Brain, Code2, Box, Server, PiIcon as Python, Database, Globe } from "lucide-react"
 
 const container = {
   hidden: { opacity: 0 },
@@ -21,43 +21,46 @@ const item = {
 
 const skills = [
   {
-    title: "Vanilla JavaScript",
+    title: "JavaScript & Node.js",
     description:
-      "Expert in JavaScript fundamentals and modern ES6+ features. Building interactive and dynamic web applications with pure JavaScript.",
+      "Proficient in JavaScript (ES6+) for both frontend and backend development. Experienced in building interactive web applications with Vanilla JavaScript and developing scalable backend services and RESTful APIs using Node.js.",
     icon: Code2,
     color: "text-yellow-500",
   },
   {
-    title: "Angular, React & Vue",
-    description:
-      "Extensive experience with modern frontend frameworks, building scalable SPAs and responsive web applications.",
-    icon: Box,
-    color: "text-blue-500",
-  },
-  {
-    title: "Node.js",
-    description: "Building fast and scalable server-side applications and APIs using Node.js and Express.",
-    icon: Server,
-    color: "text-green-500",
-  },
-  {
     title: "Python & Django",
-    description: "Developing robust backend systems and web applications using Python and Django framework.",
+    description:
+      "Utilized Python for large language model (LLM) applications, machine learning model training, and backend development using Django. Skilled in data preprocessing, model optimization, and building robust web applications integrating AI solutions.",
     icon: Python,
     color: "text-indigo-500",
   },
   {
+    title: "React",
+    description:
+      "Hands-on experience with React for building scalable SPAs and responsive web applications, focusing on clean architecture and user-centric design.",
+    icon: Box,
+    color: "text-blue-500",
+  },
+  {
     title: "Databases",
     description:
-      "Working with various databases including PostgreSQL, MongoDB, and Redis for efficient data management.",
+      "Experienced in working with MySQL, InfluxDB, MongoDB, and PostgreSQL for efficient data management, real-time analytics, and scalable storage solutions.",
     icon: Database,
     color: "text-rose-500",
   },
   {
     title: "Web Technologies",
-    description: "Proficient in HTML5, CSS3, and modern web APIs. Creating responsive and accessible web experiences.",
+    description:
+      "Proficient in HTML5, CSS3, and modern web APIs. Experienced in creating responsive, accessible web experiences and deploying scalable applications using cloud platforms and CI/CD pipelines.",
     icon: Globe,
     color: "text-cyan-500",
+  },
+  {
+    title: "AI & Machine Learning",
+    description:
+      "Hands-on experience with large language models (LLMs), machine learning model training, and AI-driven applications. Skilled in data preprocessing, model optimization, and integrating AI solutions using frameworks like TensorFlow, PyTorch, and scikit-learn.",
+    icon: Brain,
+    color: "text-purple-500",
   },
 ]
 
