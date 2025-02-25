@@ -28,7 +28,7 @@ jobs:
         run: npm run build
 
       - name: Add CNAME file
-        run: echo 'euniejo.me' > ./out/CNAME  # Adjust path if needed
+        run: echo 'www.euniejo.me' > ./out/CNAME  # Adjust path if needed
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
